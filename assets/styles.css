@@ -47,7 +47,7 @@ h1 {
 
 /* General Container Styling */
 .container {
-    width: 50%; /* Full width */
+    width: 100%; /* Full width */
     max-width: 600px; /* Max-width to prevent overly wide content */
     margin: 0 auto; /* Center the container */
     padding-left: 15px;
@@ -110,10 +110,20 @@ h1 {
     }
 }
 
-/* Responsive Design for Larger Screens (Laptop and beyond) */
-@media (min-width: 769px) {
+
+
+@media (min-width: 1024px) {
+    .container {
+        width: 70%; /* Occupy more space on larger screens */
+        max-width: 800px;
+    }
+    {
     .custom-col {
         width: 33.3333%; /* 3 columns per row on larger screens */
+    }
+
+    .cards {
+        padding: 25px; /* Add more padding for larger screens */
     }
 }
 
