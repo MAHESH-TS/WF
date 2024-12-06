@@ -34,6 +34,8 @@ body {
     border-radius: 10px; /* Rounded corners for cards */
     box-sizing: border-box; /* Ensure padding and border are included in width */
     text-align: center;
+    flex: 0 1 calc(33.33% - 20px); /* 3 cards in a row, accounting for the gap */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
 }
 
 /* Heading Styling */
@@ -53,6 +55,10 @@ h1 {
     padding-left: 15px;
     padding-right: 15px;
     box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap; /* Ensures wrapping for smaller screens */
+    justify-content: center; /* Centers the items in a row */
+    gap: 20px; /* Adds space between the containers */
 }
 
 /* Equivalent of 'col-md-4' (Flexbox for column layout) */
@@ -62,6 +68,9 @@ h1 {
     align-items: center; /* Center items horizontally */
     justify-content: center; /* Ensure the content is vertically centered */
     width: 100%; /* Take up full width */
+    flex-wrap: wrap; /* Ensures wrapping for smaller screens */
+    justify-content: center; /* Centers the items in a row */
+    gap: 20px; /* Adds space between the containers */
 }
 
 /* Equivalent of 'col-md-4' for responsive layout */
