@@ -4,7 +4,7 @@
     width: 100%; /* Use full width by default */
     max-width: 400px; /* Limit max width */
     min-width: 300px; /* Minimum width for small screens */
-    margin: 0 auto; /* Center align */
+  
 }
 
 /* Background for Body */
