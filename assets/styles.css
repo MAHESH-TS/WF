@@ -1,65 +1,108 @@
-.container {
-    width: 50%;
-    max-width: 400px;
-    min-width: 300px;
-    margin: 0 auto;
-  }
-  
 
-body{
+    /* General Container */
+.container {
+    width: 100%; /* Use full width by default */
+    max-width: 400px; /* Limit max width */
+    min-width: 300px; /* Minimum width for small screens */
+    margin: 0 auto; /* Center align */
+}
+
+/* Background for Body */
+body {
     background-image: url("bg.jpg");
     background-attachment: fixed; 
-    background-size: cover;  
-    
+    background-size: cover;
+    margin: 0; /* Ensure no unexpected scrolling due to margins */
+    padding: 0; /* Reset padding */
 }
-.content{
+
+/* Content Styling */
+.content {
     position: relative;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+    padding: 20px; /* Add padding for better spacing */
+    border-radius: 8px; /* Rounded corners for a modern look */
 }
-.btn{
-    background-color:brown;
+
+/* Button Styling */
+.btn {
+    background-color: brown;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    text-align: center;
 }
-.cards{
-    margin: 20px;
+
+/* Card Styling */
+.cards {
+    margin: 20px 0; /* Top and bottom margin */
     padding: 20px;
-
-    background-color:#c7b198;
+    background-color: #c7b198;
     border: 5px solid rgba(241, 225, 222, 0.594);
-}   
+    border-radius: 10px; /* Rounded corners for better visuals */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
 
-
+/* Heading Styling */
 h1 {
     text-align: center; 
     margin-top: 20px; 
     padding-top: 20px;
-  }
+    font-size: 2rem; /* Scalable font size */
+    color: black;
+}
 
-    /* Equivalent of Bootstrap's 'container' */
+/* Custom Container (Optional Utility Class) */
 .custom-container {
     width: 100%; /* Full width */
     max-width: 1140px; /* Adjust based on desired max-width */
     margin: 0 auto; /* Center the container */
     padding-left: 15px;
     padding-right: 15px;
-  }
-  
-  /* Equivalent of 'col-md-4' */
-  .custom-col {
+}
+
+/* Custom Column Class */
+.custom-col {
     width: 33.3333%; /* 4/12 = 33.33% */
     flex: 0 0 auto; /* Prevents resizing */
     box-sizing: border-box; /* Ensures padding is within the width */
-  }
-  
-  /* Equivalent of 'mb-4' */
-  .custom-mb {
+}
+
+/* Margin Bottom Utility */
+.custom-mb {
     margin-bottom: 1.5rem; /* 24px */
-  }
-  
-  /* Equivalent of 'text-center' */
-  .text-center {
+}
+
+/* Text Center */
+.text-center {
     text-align: center;
-  }
-  
+}
+
+/* RESPONSIVE STYLING */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Take up most of the screen on smaller devices */
+        max-width: none; /* Remove max-width restriction */
+        margin: 0 auto;
+    }
+
+    .cards {
+        margin: 10px 0; /* Reduce margin for smaller devices */
+        padding: 15px; /* Reduce padding */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Smaller font size for smaller screens */
+    }
+    
+    .btn {
+        padding: 8px 16px; /* Smaller buttons on mobile */
+        font-size: 1rem;
+    }
+}
 
 
   
