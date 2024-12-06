@@ -1,92 +1,122 @@
-/* General Container - Responsive Behavior */
-.container {
-    display: flex; /* Use Flexbox for alignment */
-    flex-direction: column; /* Stack child elements vertically */
-    align-items: center; /* Center elements horizontally */
-    width: 100%; /* Full width by default */
-    max-width: 500px; /* Limit max width for large screens */
-    margin: 0 auto; /* Center align */
-    padding: 10px; /* Add padding for spacing */
-    box-sizing: border-box; /* Ensure padding is within width */
-}
-
-/* Background for Body */
+/* Body Styling */
 body {
     background-image: url("bg.jpg");
-    background-attachment: fixed; 
+    background-attachment: fixed;
     background-size: cover;
-    margin: 0; /* Reset margins */
-    padding: 0;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
 /* Content Styling */
 .content {
     position: relative;
-    background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
-    padding: 20px; /* Add padding for spacing */
-    border-radius: 10px; /* Rounded corners for better visuals */
-}
-
-/* Individual Cards */
-.cards {
-    width: 100%; /* Full width of the container */
-    margin: 10px 0; /* Add spacing between cards */
-    padding: 15px; /* Internal padding */
-    text-align: center; /* Center text */
-    background-color: #c7b198; /* Background color */
-    border: 5px solid rgba(241, 225, 222, 0.594);
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-    box-sizing: border-box; /* Ensure border and padding are included */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px; /* Padding for content */
 }
 
 /* Button Styling */
 .btn {
     background-color: brown;
-    color: white;
-    padding: 10px 20px;
+    color: white; /* Ensure button text is readable */
+    padding: 10px 20px; /* Button padding */
     border: none;
     border-radius: 5px; /* Rounded corners */
     cursor: pointer;
-    text-align: center;
     font-size: 1rem;
+}
+
+/* Card Styling */
+.cards {
+    margin: 10px; /* Margin for spacing between cards */
+    padding: 20px; /* Internal padding */
+    background-color: #c7b198;
+    border: 5px solid rgba(241, 225, 222, 0.594);
+    border-radius: 10px; /* Rounded corners for cards */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+    text-align: center;
 }
 
 /* Heading Styling */
 h1 {
-    text-align: center; 
-    font-size: 2rem; /* Scalable font size */
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 2rem; /* Larger heading size */
     color: black;
-    margin: 20px 0;
 }
 
-/* RESPONSIVE STYLING */
+/* General Container Styling */
+.container {
+    width: 100%; /* Full width */
+    max-width: 1140px; /* Max-width to prevent overly wide content */
+    margin: 0 auto; /* Center the container */
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+/* Equivalent of 'col-md-4' (Flexbox for column layout) */
+.custom-container {
+    display: flex;
+    flex-direction: column; /* Stack the content vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Ensure the content is vertically centered */
+    width: 100%; /* Take up full width */
+}
+
+/* Equivalent of 'col-md-4' for responsive layout */
+.custom-col {
+    width: 100%; /* Default to 100% for mobile */
+    box-sizing: border-box; /* Ensure padding and border are within width */
+}
+
+/* Margins between columns */
+.custom-mb {
+    margin-bottom: 1.5rem; /* 24px margin at the bottom */
+}
+
+/* Text Center */
+.text-center {
+    text-align: center;
+}
+
+/* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
-    /* Adjust container for smaller screens */
     .container {
-        width: 90%; /* Take up most of the screen */
-        max-width: none; /* Remove max-width restriction */
-        padding: 5px; /* Reduce padding for smaller screens */
+        width: 100%; /* Full width for smaller screens */
+        max-width: none; /* Remove max-width for mobile */
+        padding: 5px; /* Reduce padding */
     }
 
-    /* Adjust card width and padding */
+    .custom-col {
+        width: 100%; /* Ensure each column takes full width */
+    }
+
+    /* Adjust card padding and margin for mobile */
     .cards {
-        width: 100%; /* Cards take up full width of container */
         padding: 10px; /* Reduce padding */
-        margin: 10px 0; /* Adjust margin */
+        margin: 10px 0; /* Reduce margins */
     }
 
-    /* Adjust heading size for mobile */
+    /* Smaller heading size for mobile */
     h1 {
-        font-size: 1.5rem; /* Smaller font size */
+        font-size: 1.5rem; /* Reduce font size */
     }
 
-    /* Adjust button size */
+    /* Adjust button size for mobile */
     .btn {
         padding: 8px 16px; /* Reduce padding */
-        font-size: 0.9rem; /* Smaller font size */
+        font-size: 0.9rem; /* Reduce font size */
     }
 }
+
+/* Responsive Design for Larger Screens (Laptop and beyond) */
+@media (min-width: 769px) {
+    .custom-col {
+        width: 33.3333%; /* 3 columns per row on larger screens */
+    }
+}
+
 
 
 
