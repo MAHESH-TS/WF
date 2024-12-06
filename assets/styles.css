@@ -35,7 +35,7 @@ body {
     margin: 20px 0; /* Top and bottom margin */
     padding: 20px;
     background-color: #c7b198;
-    border: 5px solid rgba(241, 225, 222, 0.594);
+    border: 50px solid rgba(241, 225, 222, 0.594);
     border-radius: 10px; /* Rounded corners for better visuals */
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
@@ -46,7 +46,7 @@ h1 {
     text-align: center; 
     margin-top: 20px; 
     padding-top: 20px;
-    font-size: 2rem; /* Scalable font size */
+    font-size: 10rem; /* Scalable font size */
     color: black;
 }
 
