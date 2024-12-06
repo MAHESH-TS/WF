@@ -133,6 +133,10 @@ h1 {
 
     .cards {
         padding: 25px; /* Add more padding for larger screens */
+        display: flex;
+    flex-wrap: wrap; /* Ensures wrapping for smaller screens */
+    justify-content: center; /* Centers the items in a row */
+    gap: 20px; /* Adds space between the containers */
     }
 }
 
