@@ -41,9 +41,9 @@ body {
 /* Heading Styling */
 h1 {
     text-align: center;
-    margin-top: 10px;
-    padding-top: 10px;
-    font-size: 2rem; /* Larger heading size */
+    margin-top: 40px;
+    padding-top: 40px;
+    font-size: 4rem; /* Larger heading size */
     color: black;
 }
 
