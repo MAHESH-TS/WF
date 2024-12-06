@@ -47,7 +47,7 @@ h1 {
 
 /* General Container Styling */
 .container {
-    width: 100%; /* Full width */
+    width: 80%; /* Full width */
     max-width: 1140px; /* Max-width to prevent overly wide content */
     margin: 0 auto; /* Center the container */
     padding-left: 15px;
